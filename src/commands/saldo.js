@@ -19,7 +19,7 @@ module.exports = {
       
       const perfilMention = await users.findOne({userId: IsMetioned.id})
       
-      const embedMention = new EmbedBuilder().setDescription(`Olá ${interaction.user.globalName}, o saldo do(a) ${IsMetioned} é de ${perfil.dinheiro} moedas!`).setColor("Green");
+      const embedMention = new EmbedBuilder().setDescription(`Olá ${interaction.user.globalName}, o saldo do(a) ${IsMetioned.username} é de ${perfilMention.dinheiro} moedas!`).setColor("Green");
       
       await interaction.editReply({embeds: [embedMention]});
       
