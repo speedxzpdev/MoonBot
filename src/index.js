@@ -24,8 +24,11 @@ const client = new Client({
   
   const rest = new REST({version: "10"}).setToken(process.env.TOKEN_BOT);
   
-  await rest.put(Routes.applicationGuildCommands("1432672069363171350", "1406134812317585498"), {body: slashCommandList});
-
+  //area de slash de testes!
+  await rest.put(Routes.applicationGuildCommands("1432672069363171350", "1406134812317585498"), {body: []});
+ 
+ //area de slash publicos
+  await rest.put(Routes.applicationCommands("1432672069363171350"), {body: slashCommandList});
 
 
 //on ready 
