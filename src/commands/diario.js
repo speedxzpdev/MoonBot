@@ -3,7 +3,7 @@ const { users } = require("../database/models/users")
 
 
 module.exports = {
-  data: new SlashCommandBuilder().setName("diario").setDescription(".");
+  data: new SlashCommandBuilder().setName("diario").setDescription("."),
   async execute(interact) {
     try {
     await interact.deferReply();
