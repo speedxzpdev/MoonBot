@@ -22,7 +22,7 @@ module.exports = {
     
     const dinheiroRandom = Math.floor(Math.random() * 2000) +1
     
-    await users.updateOne({userId: interact.user.id}, {$inc: {dinheiro: dinheiroRandom}}, {$set: {diario: new Date()}});
+    await users.updateOne({userId: interact.user.id}, {$inc: {dinheiro: dinheiroRandom}, $set: {diario: new Date()}});
     
     await interact.editReply(`Parabéns! ${interact.user.globalName}, você ganhou ${dinheiroRandom} moedas!`);
     
