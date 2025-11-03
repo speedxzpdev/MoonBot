@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@napi-rs/canvas": "^0.1.81",
+    "canvacord": "^6.0.4",
     "discord.js": "^14.24.0",
     "dotenv": "^17.2.3",
     "mongodb": "^6.20.0",
