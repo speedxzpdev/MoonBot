@@ -11,7 +11,7 @@ const emojis = require("../emojis.json")
   
   client.on("messageCreate", async (message) => {
   if (message.author.bot) return;
-  
+  if (message.mentions.everyone) return;
   
   if (!await users.findOne({userId: message.author.id})) {
     await users.create({userId: message.author.id
