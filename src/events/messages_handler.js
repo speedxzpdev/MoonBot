@@ -29,6 +29,8 @@ const emojis = require("../emojis.json")
     
     const botaoConvidarBot = new ActionRowBuilder().addComponents(new ButtonBuilder().setLabel(`Convidar bot`).setEmoji({id: "1433463773363961956"}).setStyle(ButtonStyle.Link).setURL("https://discord.com/oauth2/authorize?client_id=1432672069363171350&permissions=8&integration_type=0&scope=bot"));
     
+    const speedGitHub = new ActionRowBuilder().addComponents( new ButtonBuilder.().setLabel("GitHub").setStyle(ButtonStyle.Link).setURL("https://github.com/speedxzpdev/MoonBot"));
+    
     await message.reply({embeds: [embedHelp], components: [botaoConvidarBot]})
     
   }
