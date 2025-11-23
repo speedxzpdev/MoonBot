@@ -31,7 +31,7 @@ const emojis = require("../emojis.json")
     
     const speedGitHub = new ActionRowBuilder().addComponents( new ButtonBuilder().setLabel("GitHub").setStyle(ButtonStyle.Link).setURL("https://github.com/speedxzpdev/MoonBot"));
     
-    await message.reply({embeds: [embedHelp], components: [botaoConvidarBot]})
+    await message.reply({embeds: [embedHelp], components: [botaoConvidarBot, speedGitHub]})
     
   }
   
