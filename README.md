@@ -18,3 +18,40 @@ Bot com ferramentas úteis para seu servidor no discord.
 - Comandos de economia basico
 
 
+<h1 align="center">Como instalar?</h1>
+
+**Requisitos:**
+
+- Node v18+(recomendado)
+- Git
+
+**Instalação:**
+Tenha em mente que os comandos de instalação pode variar de ambiente.
+
+# 1. Instalar o nodejs:
+```bash 
+sudo apt install -y nodejs
+```
+# 2.Instalar o git:
+```bash
+sudo apt install -y git
+```
+# 3. Clonar o repositório:
+```bash
+git clone "https://github.com/speedxzpdev/MoonBot"
+```
+# 4. Configurar:
+Ao clonar o repositório crie um .env com os parametros:
+```env
+TOKEN_BOT=""
+PREFIX="."
+URI_DB=""
+ID_CLIENT=
+CLIENT_SECRET=
+BACKEND_SENHA=""
+```
+
+
+
+
+
