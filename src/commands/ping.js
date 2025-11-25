@@ -1,4 +1,7 @@
 const { EmbedBuilder, SlashCommandBuilder } = require('discord.js')
+const os = require("os");
+
+
 
 module.exports = {
 data: new SlashCommandBuilder().setName("ping").setDescription("mostra o ping do bot."),
@@ -42,7 +45,7 @@ async execute(interact) {
   }
   
   
-  const embed = new EmbedBuilder().setTitle(`${fraseHora} ${interact.user.globalName}!`).setDescription(`*Latência:* ${latencia}\n*Qualidade:* ${qualidadePing}`).setThumbnail("https://files.catbox.moe/8v6lib.jpg").setColor(corPing).setFooter({text: `Horário: ${new Date().toLocaleTimeString("pt-BR")}`})
+  const embed = new EmbedBuilder().setTitle(`${fraseHora} ${interact.user.globalName}!`).setDescription(`*Latência:* ${latencia}\n*Qualidade:* ${qualidadePing}\nHost: ${os.hostname()}\nNode: ${process.version}`).setThumbnail("https://files.catbox.moe/8v6lib.jpg").setColor(corPing).setFooter({text: `Horário: ${new Date().toLocaleTimeString("pt-BR")}`})
   
   
   await interact.editReply({embeds: [embed]});
